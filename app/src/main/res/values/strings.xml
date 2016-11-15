@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TaskHelper</string>
+
+    <!-- Create Task -->
+    <string name="category">Category</string>
+    <string name="task_name">Task Name</string>
+    <string name="task_description">Task Description</string>
+    <string name="location_zip">Location (ZIP Code)</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="start_time">4:30 PM</string>
+    <string name="end_time">6:30 PM</string>
+    <string name="start_day">Fri, October 28 2016</string>
+    <string name="end_day">Fri, October 28 2016</string>
+
+    <!-- Opening welcome Screen -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello USERNAME</string>
+    <string name="slide_1_desc">Welcom to Task Force!</string>
+
+    <string name="slide_2_title">Some BS</string>
+    <string name="slide_2_desc">Requests tasks to be done with ease!</string>
+
+    <string name="slide_3_title">Great Price</string>
+    <string name="slide_3_desc">Task Force offers the best service for best price!</string>
+
+    <string name="slide_4_title">Explore</string>
+    <string name="slide_4_desc">Open the app and explore the possibilities!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>
