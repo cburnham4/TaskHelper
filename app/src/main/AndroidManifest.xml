@@ -18,10 +18,11 @@
         <activity android:name=".activities.WelcomeActivity" />
         <activity
             android:name=".activities.HomeActivity"
-            android:label="Request Help"/>
+            android:label="Request Help" />
         <activity
             android:name=".activities.CreateTaskActivity"
-            android:label="Create Task"/>
+            android:label="Create Task" />
+        <activity android:name=".activities.TasksInCategoriesActivity"></activity>
     </application>
 
 </manifest>

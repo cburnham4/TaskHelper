@@ -89,5 +89,8 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewClick
     @Override
     public void recyclerViewListClicked(View v, int position) {
         /* Go to the next activity */
+        /* TODO send category */
+        Intent intent = new Intent(this, TasksInCategoriesActivity.class);
+        startActivity(intent);
     }
 }

@@ -12,6 +12,9 @@
     <string name="end_time">6:30 PM</string>
     <string name="start_day">Fri, October 28 2016</string>
     <string name="end_day">Fri, October 28 2016</string>
+    <string name="visibility">Visibility (Who can see your post)</string>
+    <string name="public_visibility">Public</string>
+    <string name="friends_visibility">Only Friends</string>
 
     <!-- Opening welcome Screen -->
     <string name="next">NEXT</string>
