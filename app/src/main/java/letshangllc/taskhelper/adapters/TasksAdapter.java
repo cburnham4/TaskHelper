@@ -89,7 +89,18 @@ public class TasksAdapter extends RecyclerView.Adapter<TasksAdapter.ViewHolder> 
         Task task = tasks.get(position);
         holder.tvTaskName.setText(task.getName());
         holder.tvTaskDescription.setText(task.getDescription());
-        holder.tvDistance.setText("7.3 mi");
+        switch (position){
+            case 0:
+                holder.tvDistance.setText("0.4 mi");
+                break;
+            case 1:
+                holder.tvDistance.setText("3.7 mi");
+                break;
+            case 2:
+                holder.tvDistance.setText("8.2 mi");
+        }
+
+
         holder.tvDateTime.setText(simpleDateFormat.format(task.getPostedTime()));
 
 

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/cardview_height"
+    android:layout_height="@dimen/cardview_task_height"
     android:layout_marginBottom="@dimen/margin_between_items"
     card_view:cardCornerRadius="0dp"
     android:focusable="true"
@@ -26,16 +26,18 @@
             android:layout_alignParentTop="true"
             android:textStyle="bold"
             android:textColor="@android:color/black"
+            android:textSize="@dimen/cardview_task_titlesz"
             />
 
         <TextView
-            android:layout_below="@+id/tv_task_name"
+            android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ellipsize="end"
+            android:ellipsize="marquee"
             android:maxLines="1"
-            android:maxLength="20"
-            android:id="@+id/tv_task_description"/>
+            android:maxEms="20"
+            android:id="@+id/tv_task_description"
+            android:textSize="@dimen/cardview_task_textsz"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,15 +45,17 @@
             android:id="@+id/tv_date_time"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"/>
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/cardview_task_textsz"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
             android:id="@+id/tv_distance"
-            android:layout_below="@id/tv_date_time"/>
+            android:textSize="@dimen/cardview_task_textsz"/>
 
 
     </RelativeLayout>
