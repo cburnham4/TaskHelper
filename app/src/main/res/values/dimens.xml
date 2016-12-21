@@ -31,4 +31,8 @@
     <dimen name="cardview_task_textsz">14sp</dimen>
     <dimen name="cardview_task_height">64dp</dimen>
 
+    <!-- Task Details -->
+    <dimen name="details_text_size_reg">16sp</dimen>
+    <dimen name="details_padding_reg">8sp</dimen>
+
 </resources>

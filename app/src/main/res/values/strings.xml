@@ -15,6 +15,7 @@
     <string name="visibility">Visibility (Who can see your post)</string>
     <string name="public_visibility">Public</string>
     <string name="friends_visibility">Only Friends</string>
+    <string name="posters_name">Poster\'s Name</string>
 
     <!-- Opening welcome Screen -->
     <string name="next">NEXT</string>
@@ -35,4 +36,7 @@
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
+
+    <!-- Intent parameters -->
+    <string name="send_task_extra">SEND_TASK</string>
 </resources>

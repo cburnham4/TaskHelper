@@ -14,7 +14,9 @@ import java.util.Date;
 import letshangllc.taskhelper.R;
 import letshangllc.taskhelper.adapters.RecyclerViewClickListener;
 import letshangllc.taskhelper.adapters.TasksAdapter;
+import letshangllc.taskhelper.classes.Category;
 import letshangllc.taskhelper.classes.Task;
+import letshangllc.taskhelper.data.Categories;
 
 public class TasksInCategoriesActivity extends AppCompatActivity implements RecyclerViewClickListener{
 
@@ -51,9 +53,9 @@ public class TasksInCategoriesActivity extends AppCompatActivity implements Recy
 
     private void setupList(){
         tasks = new ArrayList<>();
-        tasks.add(new Task(0, "Clean Room", "Clean my bedroom and closet", "97221", new Date(), 01, true));
-        tasks.add(new Task(0, "Clean Bathroom", "Clean my bedroom and closet", "97221", new Date(), 01, true));
-        tasks.add(new Task(0, "Do Dishes", "Put up old dishes and clean the dirty ones", "97221", new Date(), 01, true));
+        tasks.add(new Task(0, "Clean Room", "Clean my bedroom and closet", "97221", new Date(), Categories.cleaning, 01, true));
+        tasks.add(new Task(0, "Clean Bathroom", "Clean my bedroom and closet", "97221", new Date(),Categories.cleaning, 01, true));
+        tasks.add(new Task(0, "Do Dishes", "Put up old dishes and clean the dirty ones", "97221", new Date(), Categories.cleaning, 01, true));
         /* find the recycleview */
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_tasks_in_category);
 
@@ -77,7 +79,7 @@ public class TasksInCategoriesActivity extends AppCompatActivity implements Recy
 
         /* Create new intent */
         Intent intent = new Intent(this, TaskDetailsActivity.class);
-
+        intent.putExtra(getString(R.string.send_task_extra), task);
         startActivity(intent);
     }
 }
