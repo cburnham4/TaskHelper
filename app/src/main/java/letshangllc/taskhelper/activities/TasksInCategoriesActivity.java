@@ -1,5 +1,6 @@
 package letshangllc.taskhelper.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,6 +22,9 @@ public class TasksInCategoriesActivity extends AppCompatActivity implements Recy
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+
+    /* Tasks Data */
+    private ArrayList<Task> tasks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +50,7 @@ public class TasksInCategoriesActivity extends AppCompatActivity implements Recy
     }
 
     private void setupList(){
-        ArrayList<Task> tasks = new ArrayList<>();
+        tasks = new ArrayList<>();
         tasks.add(new Task(0, "Clean Room", "Clean my bedroom and closet", "97221", new Date(), 01, true));
         tasks.add(new Task(0, "Clean Bathroom", "Clean my bedroom and closet", "97221", new Date(), 01, true));
         tasks.add(new Task(0, "Do Dishes", "Put up old dishes and clean the dirty ones", "97221", new Date(), 01, true));
@@ -68,6 +72,12 @@ public class TasksInCategoriesActivity extends AppCompatActivity implements Recy
 
     @Override
     public void recyclerViewListClicked(View v, int position) {
+        /* Get the task */
+        Task task = tasks.get(position);
 
+        /* Create new intent */
+        Intent intent = new Intent(this, TaskDetailsActivity.class);
+
+        startActivity(intent);
     }
 }

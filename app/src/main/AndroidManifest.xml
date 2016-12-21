@@ -22,7 +22,8 @@
         <activity
             android:name=".activities.CreateTaskActivity"
             android:label="Create Task" />
-        <activity android:name=".activities.TasksInCategoriesActivity"></activity>
+        <activity android:name=".activities.TasksInCategoriesActivity" />
+        <activity android:name=".activities.TaskDetailsActivity"></activity>
     </application>
 
 </manifest>
