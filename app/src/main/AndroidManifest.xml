@@ -23,7 +23,8 @@
             android:name=".activities.CreateTaskActivity"
             android:label="Create Task" />
         <activity android:name=".activities.TasksInCategoriesActivity" />
-        <activity android:name=".activities.TaskDetailsActivity"></activity>
+        <activity android:name=".activities.TaskDetailsActivity" />
+        <activity android:name=".activities.MessagingActivity"></activity>
     </application>
 
 </manifest>

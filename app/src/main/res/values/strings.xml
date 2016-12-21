@@ -15,7 +15,10 @@
     <string name="visibility">Visibility (Who can see your post)</string>
     <string name="public_visibility">Public</string>
     <string name="friends_visibility">Only Friends</string>
+
+    <!--Task Details-->
     <string name="posters_name">Poster\'s Name</string>
+    <string name="message_poster">Message Poster</string>
 
     <!-- Opening welcome Screen -->
     <string name="next">NEXT</string>
@@ -39,4 +42,7 @@
 
     <!-- Intent parameters -->
     <string name="send_task_extra">SEND_TASK</string>
+
+    <string name="mock_message1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </string>
+    <string name="mock_message2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</string>
 </resources>

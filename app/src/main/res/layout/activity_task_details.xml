@@ -63,79 +63,10 @@
                 android:padding="@dimen/details_padding_reg"
                 android:textColor="@android:color/black"/>
 
-            <LinearLayout
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/btn_from_date"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    style="?android:attr/spinnerStyle"
-                    android:text="@string/start_day"
-                    android:gravity="center"/>
-                <Button
-                    android:id="@+id/btn_from_time"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="?android:attr/spinnerStyle"
-                    android:text="@string/start_time"
-                    android:gravity="center"/>
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/to"/>
-
-            <!-- Times -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/btn_to_date"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    style="?android:attr/spinnerStyle"
-                    android:text="@string/end_day"
-                    android:gravity="center"/>
-                <Button
-                    android:id="@+id/btn_to_time"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="?android:attr/spinnerStyle"
-                    android:text="@string/end_time"
-                    android:gravity="center"/>
-            </LinearLayout>
-
-            <!-- Visibility -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/visibility"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <RadioButton android:id="@+id/radio_pirates"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/public_visibility"
-                    android:onClick="onRadioButtonClicked"
-                    android:layout_weight="1"/>
-                <RadioButton android:id="@+id/radio_ninjas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/friends_visibility"
-                    android:onClick="onRadioButtonClicked"
-                    android:layout_weight="1"/>
-            </RadioGroup>
+                android:text="@string/message_poster"/>
 
         </LinearLayout>
     </ScrollView>
