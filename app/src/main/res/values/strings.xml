@@ -44,5 +44,5 @@
     <string name="send_task_extra">SEND_TASK</string>
 
     <string name="mock_message1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </string>
-    <string name="mock_message2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</string>
+    <string name="mock_message2">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
 </resources>

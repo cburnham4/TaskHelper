@@ -1,5 +1,6 @@
 package letshangllc.taskhelper.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -61,5 +62,10 @@ public class TaskDetailsActivity extends AppCompatActivity {
         tvCategoryName.setText(String.format(Locale.getDefault(), "%s", task.getCategory().getName()));
         tvDescription.setText(String.format(Locale.getDefault(), "%s", task.getDescription()));
 
+    }
+
+    public void gotoMessagePoster(View view){
+        Intent intent = new Intent(this, MessagingActivity.class);
+        startActivity(intent);
     }
 }
