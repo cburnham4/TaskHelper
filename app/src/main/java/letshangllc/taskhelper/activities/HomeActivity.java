@@ -71,6 +71,8 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewClick
                 /* Go to create a new Task */
                 goToCreateTask();
                 break;
+            case R.id.action_profile:
+                startActivity(new Intent(HomeActivity.this, EditProfileActivity.class));
             default:
                 // If we got here, the user's action was not recognized.
                 // Invoke the superclass to handle it.
